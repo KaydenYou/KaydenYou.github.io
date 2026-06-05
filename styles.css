@@ -1192,28 +1192,49 @@ h3 {
 }
 
 .contact-panel {
-  max-width: 620px;
-  grid-template-columns: 176px minmax(0, 1fr);
+  max-width: 760px;
+  grid-template-columns: 190px minmax(0, 1fr);
   gap: 30px;
   margin-inline: auto;
-  align-items: center;
+  align-items: start;
 }
 
 .contact-panel img {
-  width: 176px;
-  height: 176px;
+  width: 190px;
+  height: 190px;
   border: 2px solid var(--ink);
   background: #fff;
   filter: none;
   box-shadow: none;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
+}
+
+.profile-intro {
+  max-width: 520px;
+}
+
+.profile-intro p {
+  margin: 0 0 16px;
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1.78;
+}
+
+.profile-intro p:first-child {
+  margin-top: -4px;
+}
+
+.profile-intro strong {
+  font-weight: 750;
 }
 
 .contact-list {
   gap: 14px;
-  padding: 0;
+  margin-top: 18px;
+  padding: 16px 0 0;
   border: 0;
+  border-top: 1px dotted var(--line-strong);
   background: transparent;
   box-shadow: none;
 }
@@ -1337,6 +1358,57 @@ h3 {
   color: var(--ink);
 }
 
+.work-image-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 54px;
+  max-width: 620px;
+  margin: 42px auto 68px;
+}
+
+.work-image-card {
+  display: grid;
+  gap: 10px;
+  color: var(--ink);
+}
+
+.work-image-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 2px solid var(--ink);
+  background: #fff;
+  filter: grayscale(1);
+  transition:
+    filter 240ms ease,
+    transform 240ms ease;
+}
+
+.work-image-card span,
+.work-image-card strong {
+  display: block;
+}
+
+.work-image-card span {
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.work-image-card strong {
+  font-size: 25px;
+  line-height: 1.22;
+}
+
+.work-image-card:hover img {
+  filter: grayscale(0) contrast(1.04);
+  transform: translateY(-2px);
+}
+
+.work-image-card:hover strong {
+  color: var(--red);
+}
+
 .work-section,
 .case-section,
 .finance-section,
@@ -1423,11 +1495,12 @@ h3 {
   height: 122px;
   border: 2px solid var(--ink);
   filter: grayscale(1);
+  object-fit: cover;
 }
 
 .visual-card:hover img {
   transform: none;
-  filter: grayscale(0);
+  filter: grayscale(0) contrast(1.04);
 }
 
 .visual-card div {
@@ -1681,6 +1754,7 @@ h3 {
   }
 
   .hero-statement,
+  .profile-intro p,
   .section-heading p,
   .work-card p,
   .case-main p,
