@@ -1204,9 +1204,10 @@ h3 {
   height: 176px;
   border: 2px solid var(--ink);
   background: #fff;
-  filter: grayscale(1);
+  filter: none;
   box-shadow: none;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 .contact-list {
