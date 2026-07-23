@@ -2,503 +2,514 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="由梓健的中文个人主页，展示普华永道战略咨询、中信证券投资分析、光大银行客户经理、小米汽车 Kunlun 服务包方案、教育背景与中英文简历。"
+      content="由梓健的中文个人主页，展示小米汽车、普华永道、中信证券、光大银行实习经历，在校项目、教育背景与中英文简历。"
     />
-    <title>由梓健 Zijian You | 中文个人主页</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>由梓健 Zijian You｜个人主页</title>
+    <link rel="stylesheet" href="./styles.css?v=20260723b" />
+    <script src="./app.js?v=20260723b" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回首页">
-        <span class="brand-mark">由</span>
-        <span class="brand-copy">
+      <div class="header-inner">
+        <a class="brand" href="#about" aria-label="返回关于部分">
           <strong>由梓健</strong>
-          <small>Zijian You</small>
-        </span>
-      </a>
-      <nav class="site-nav" aria-label="页面导航">
-        <a href="#profile">介绍</a>
-        <a href="#work">作品索引</a>
-        <a href="#cases">案例</a>
-        <a href="#finance">金融</a>
-        <a href="#leadership">领导力</a>
-        <a href="#resume">简历</a>
-      </nav>
+          <span>Zijian You</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          菜单
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="页面导航">
+          <a href="#about">关于</a>
+          <a href="#internships">实习经历</a>
+          <a href="#intern-projects">实习项目</a>
+          <a href="#campus-projects">在校项目</a>
+          <a href="#education">教育</a>
+          <a href="#resume">简历</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="top">
-      <section id="profile" class="hero-section" aria-label="个人介绍">
-        <div class="hero-copy">
-          <p class="chapter">I · Personal Profile</p>
-          <h1>由梓健<br /><span>Zijian You</span></h1>
-          <p class="hero-statement">
-            嗨！我是 Zijian You。我正在英国 Warwick WMG 攻读 Programme and Project Management，这里放的是我能展开讲清楚的项目、实习材料和简历。
-          </p>
-          <div class="hero-actions">
-            <a class="primary-action" href="./You_Zijian_CV_CN.pdf">中文简历</a>
-            <a class="secondary-action" href="./You_Zijian_CV_EN.pdf">English CV</a>
-            <a class="tertiary-action" href="#cases">精选作品</a>
-          </div>
-        </div>
+    <main>
+      <section class="hero section-shell" id="about" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <figure class="portrait-frame">
+            <img src="./assets/profile-zijian.jpg" alt="由梓健个人照片" />
+          </figure>
 
-        <aside class="contact-panel" aria-label="个人介绍与联系方式">
-          <img src="./assets/generated/profile-portrait.png" alt="由梓健头像" />
-          <div class="profile-intro">
-            <p>
-              嗨！我是 Zijian You
+          <div class="hero-copy">
+            <p class="eyebrow">Programme &amp; Project Management</p>
+            <h1 id="hero-title">嗨！我是 Zijian You</h1>
+            <p class="hero-lead">
+              我是一名在英国 Warwick WMG 攻读 Programme and Project Management
+              的研究生，也是一名对商业、项目管理、汽车行业和跨文化沟通都很感兴趣的人。
             </p>
-            <p>
-              我是一名在英国 Warwick WMG 攻读 Programme and Project Management 的研究生，也是一名对商业、项目管理、汽车行业和跨文化沟通都很感兴趣的人。
+            <p class="hero-lead">
+              我喜欢处理复杂问题，也喜欢把混乱的信息整理成清晰的方案。
             </p>
-            <p>
-              我一直觉得，好的项目不只是把事情按时完成，更重要的是把不同的人、资源和想法连接起来。无论是在课堂上的可持续医疗合作项目，还是在实习中接触供应链、咨询和金融相关工作，我都越来越确定：我喜欢处理复杂问题，也喜欢把混乱的信息整理成清晰的方案。
-            </p>
-            <p>
-              因此，我正在慢慢建立属于自己的方向：<br />我关注 项目管理、商业分析、供应链、汽车行业、ESG 与战略咨询。这些领域看起来很不同，但它们都有一个共同点——都需要理解真实的业务问题，并用结构化的方法找到可执行的解决方案。
-            </p>
-            <p>
-              在过去的经历中，我曾接触过Xiaomi的供应链工作、KPMG 的企业实习经历，中信证券实习经历以及金融行业相关分析工作。这些经历让我学会了如何在快节奏环境中处理信息、协调任务，也让我意识到，专业能力不仅仅是会使用工具，更是能够理解问题、推动沟通、持续交付结果。
-            </p>
-            <p>
-              我不是一个只喜欢“写在纸上”的人。相比单纯讨论概念，我更喜欢把想法做成真实可见的东西：一份清晰的行业研究、一套完整的求职作品集、一个可以展示自己的个人网站，或者一个能帮助我长期积累职业竞争力的小系统。
-            </p>
-            <p>
-              我现在也在探索如何用 AI 和代码工具提升自己的学习、求职和内容表达效率。我希望这个网站不仅是一个介绍我的页面，也能成为我记录成长、展示项目、整理思考的地方。
-            </p>
-            <p>
-              生活中的我喜欢游戏、汽车、旅行、视频内容和观察不同城市里的生活细节。有时候我会认真研究一个行业趋势，有时候也会沉迷于研究一套游戏技能搭配。对我来说，这些兴趣并不冲突，它们都让我保持好奇，也让我更愿意从不同角度理解世界。
-            </p>
-            <p>
-              目前，我正在英国继续完成研究生学习，同时也在为未来进入商业、项目管理、汽车或咨询相关领域做准备。<br />这个网站会记录我的项目、经历、想法和一些正在成形的计划。它可能不会一开始就很完美，但会随着我的学习、实习和职业探索不断更新。
-            </p>
-            <p>
-              欢迎来到这里，认识一个正在努力把想法变成现实的我。
-            </p>
-            <div class="contact-list">
-              <a href="mailto:shicaodeyouxiang@163.com">shicaodeyouxiang@163.com</a>
-              <a href="tel:+8618846839735">18846839735</a>
-              <span>微信：shicaowx</span>
+
+            <div class="hero-actions" aria-label="简历入口">
+              <a class="button button-primary" href="./You_Zijian_CV_CN.pdf">查看中文简历</a>
+              <a class="button button-secondary" href="./You_Zijian_CV_EN.pdf">English CV</a>
             </div>
-          </div>
-        </aside>
-      </section>
 
-      <section class="stats-strip" aria-label="关键数字">
-        <div>
-          <strong>14.1亿</strong>
-          <span>PwC 项目宏观市场入口：全国人口与现制饮品潜在市场</span>
-        </div>
-        <div>
-          <strong>30-50万</strong>
-          <span>单店盈利模型测算资本支出区间</span>
-        </div>
-        <div>
-          <strong>100+</strong>
-          <span>光大银行实习期累计服务客户</span>
-        </div>
-        <div>
-          <strong>65%</strong>
-          <span>客户投诉沟通流程优化后满意度提升</span>
-        </div>
-      </section>
-
-      <section class="site-index" aria-label="页面目录">
-        <a href="#profile"><span>关于</span><i></i><strong>I</strong></a>
-        <a href="#work"><span>作品索引</span><i></i><strong>II</strong></a>
-        <a href="#cases"><span>案例</span><i></i><strong>III</strong></a>
-        <a href="#finance"><span>金融经历</span><i></i><strong>IV</strong></a>
-        <a href="#leadership"><span>教育与领导力</span><i></i><strong>V</strong></a>
-        <a href="#resume"><span>简历与联系</span><i></i><strong>VI</strong></a>
-      </section>
-
-      <section id="work" class="work-section">
-        <div class="section-heading">
-          <p class="chapter">II · Work Wall</p>
-          <h2>把经历整理成一份作品索引。</h2>
-          <p>
-            这里放的是我能具体展开的经历和材料：市场进入报告、服务包方案、金融实习、银行客户工作、教育和简历。
-          </p>
-        </div>
-
-        <div class="work-image-index" aria-label="作品图片索引">
-          <a class="work-image-card" href="#case-pwc">
-            <img src="./assets/generated/work-index/pwc-report-01.png" alt="普华永道中国奶茶市场进入报告封面" />
-            <span>普华永道战略咨询</span>
-            <strong>中国奶茶市场进入报告</strong>
-          </a>
-          <a class="work-image-card" href="./PwC_China_Tea_Market_Feasibility_Analysis.pdf" target="_blank" rel="noreferrer">
-            <img src="./assets/generated/work-index/pwc-report-08.png" alt="普华永道报告市场和竞争分析页面" />
-            <span>报告页面</span>
-            <strong>市场、消费者与竞争分析</strong>
-          </a>
-          <a class="work-image-card" href="./PwC_China_Tea_Market_Feasibility_Analysis.pdf" target="_blank" rel="noreferrer">
-            <img src="./assets/generated/work-index/pwc-report-22.png" alt="普华永道报告财务与进入策略页面" />
-            <span>报告页面</span>
-            <strong>财务测算与进入策略</strong>
-          </a>
-          <a class="work-image-card" href="#case-xiaomi">
-            <img src="./assets/generated/work-index/xiaomi-kunlun-deck.png" alt="Xiaomi Kunlun 服务包方案封面" />
-            <span>小米汽车售后部线上实习</span>
-            <strong>Kunlun 车主服务包方案</strong>
-          </a>
-          <a class="work-image-card" href="#finance">
-            <img src="./assets/generated/cv-cn-preview.png" alt="由梓健中文简历金融实习经历预览" />
-            <span>中信证券 / 光大银行</span>
-            <strong>金融实习与客户工作</strong>
-          </a>
-        </div>
-
-        <div class="work-wall">
-          <article class="work-card visual-card span-7 reveal" data-index="01">
-            <img src="./assets/generated/pwc-tea-market.png" alt="普华永道中国新式茶饮市场进入可行性分析封面" />
-            <div>
-              <span>01 · PwC 战略管理咨询</span>
-              <h3>中国新式茶饮市场进入可行性分析</h3>
-              <p>从宏观人口、收入和餐饮消费，到单店盈利模型、进入模式、供应链壁垒和差异化策略。</p>
-              <a class="card-link" href="./PwC_China_Tea_Market_Feasibility_Analysis.pdf" target="_blank" rel="noreferrer">查看完整报告</a>
-            </div>
-          </article>
-
-          <article class="work-card punch-card span-5 reveal" data-index="02">
-            <span>02 · 投资分析</span>
-            <h3>中信证券</h3>
-            <p>行业日报、周报、深度研究报告、上市公司三张财务报表、调研纪要和电话会议纪要。</p>
-            <ul>
-              <li>行业趋势与投资逻辑提炼</li>
-              <li>Excel 建模与可视化</li>
-              <li>证券行业财税政策研究</li>
-            </ul>
-          </article>
-
-          <article class="work-card visual-card span-5 reveal" data-index="03">
-            <img src="./assets/generated/xiaomi-kunlun.png" alt="小米 Kunlun 车主服务包方案封面" />
-            <div>
-              <span>03 · 小米汽车售后部线上实习</span>
-              <h3>Kunlun 车主服务包标杆研究</h3>
-              <p>围绕高端家庭越野旅行场景，整理竞品服务、用户需求和售后触点，形成 Kunlun 车主服务包方案。</p>
-              <a class="card-link" href="./Xiaomi_Kunlun_Service_Package.pptx" target="_blank" rel="noreferrer">查看完整方案</a>
-            </div>
-          </article>
-
-          <article class="work-card bank-card span-7 reveal" data-index="04">
-            <span>04 · 光大银行营业部</span>
-            <h3>客户经理实习生</h3>
-            <p>
-              从客户资产结构和风险偏好出发，匹配理财、基金等产品；参与贷前资料收集、风险初审、客户关系维护和营销活动执行。
-            </p>
-            <div class="mini-metrics">
-              <span>100+ 客户服务</span>
-              <span>新增存款 20 万</span>
-              <span>满意度提升 65%</span>
-            </div>
-          </article>
-
-          <article class="work-card education-card span-4 reveal" data-index="05">
-            <span>05 · Education</span>
-            <h3>华威大学 + 谢菲尔德大学</h3>
-            <p>MSc Programme and Project Management；BSc Accounting, Finance and Management。</p>
-          </article>
-
-          <article class="work-card leadership-card span-4 reveal" data-index="06">
-            <span>06 · Campus Leadership</span>
-            <h3>学联外事部部长 / 红十字会内联部成员</h3>
-            <p>跨部门协作、公益活动、校方与总领馆沟通、校友网络建设。</p>
-          </article>
-
-          <article class="work-card cv-card span-4 reveal" data-index="07">
-            <span>07 · CV</span>
-            <h3>中英文简历</h3>
-            <p>这里放了中文和英文简历 PDF，也保留了一份中文 Word 版本，方便查看完整经历。</p>
-            <div class="hero-actions compact-actions">
-              <a class="primary-action" href="./You_Zijian_CV_CN.pdf">中文</a>
-              <a class="secondary-action" href="./You_Zijian_CV_EN.pdf">EN</a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section id="cases" class="case-section">
-        <div class="section-heading">
-          <p class="chapter">III · Selected Cases</p>
-          <h2>两段可以展开看的项目。</h2>
-        </div>
-
-        <article id="case-pwc" class="case-feature reveal">
-          <div class="case-index">01</div>
-          <div class="case-main">
-            <span class="case-type">普华永道 · 战略管理咨询 · 2026.01-2026.04</span>
-            <h3>中国新式茶饮市场进入可行性分析</h3>
-            <p>
-              这份报告从宏观市场、消费者场景、竞争品牌和单店模型四个角度展开，最后形成中国新式茶饮市场进入建议。
-            </p>
-          </div>
-          <div class="case-detail-grid">
-            <div>
-              <strong>研究框架</strong>
-              <p>从 14.1 亿人口、人均可支配收入超 4 万元、社零与餐饮增长，延伸到城市层级、消费者趋势、品牌竞争和单店模型。</p>
-            </div>
-            <div>
-              <strong>商业分析</strong>
-              <p>构建“产品 · 消费场景 · 竞争品牌”三层模型，使用波特五力识别供应链深度与数字化运营两大关键壁垒。</p>
-            </div>
-            <div>
-              <strong>进入方案</strong>
-              <p>预设自建、联营、加盟、并购四种模式，设计 A / B / C 三套准入方案，并对标奈雪的茶、蜜雪冰城、古茗等品牌。</p>
-            </div>
-            <div>
-              <strong>财务判断</strong>
-              <p>搭建单店盈利模型，测算资本支出 30-50 万元、原料 35-40%、租金和人力各 15-20%、投资回收期 12-18 个月。</p>
-            </div>
-          </div>
-        </article>
-
-        <article id="case-xiaomi" class="case-feature orange-case reveal">
-          <div class="case-index">02</div>
-          <div class="case-main">
-            <span class="case-type">小米汽车售后部线上实习 · Kunlun 服务包</span>
-            <h3>为高端家庭越野旅行设计售后服务体验</h3>
-            <p>
-              这份方案从家庭长途旅行者的使用场景出发，梳理故障、事故、路线、儿童座椅、行李和服务追踪等售后触点。
-            </p>
-          </div>
-          <div class="case-detail-grid">
-            <div>
-              <strong>用户画像</strong>
-              <p>核心场景为周末、假期、露营和半远程路线。用户需要实时状态、人工安抚、专业接送、数字交车和少交接环节。</p>
-            </div>
-            <div>
-              <strong>标杆研究</strong>
-              <p>对比 Land Rover、Ford F-150 Raptor、Lincoln Navigator，分别提炼冒险救援、硬派使用和豪华家庭服务逻辑。</p>
-            </div>
-            <div>
-              <strong>服务架构</strong>
-              <p>提出 Essential Care、Travel Assurance、Premium Concierge 三层模块，区分基础保养、旅行保障和高触达管家服务。</p>
-            </div>
-            <div>
-              <strong>签名服务</strong>
-              <p>远程救援协助、家庭旅行保护热线、事故管家、长途出行前检查、实时服务追踪、专属 Kunlun 顾问。</p>
-            </div>
-          </div>
-        </article>
-
-        <section class="xiaomi-artifacts reveal" aria-label="精选实习作品入口">
-          <div>
-            <p class="chapter">Selected Internship Artifacts</p>
-            <h3>精选实习作品入口</h3>
-            <p>
-              这里保留四份主要材料：市场进入报告、Kunlun 服务包方案、洗车美容服务流程泳道图和用户感知坐标系。研究底稿、对标表和来源清单收在 References。
-            </p>
-          </div>
-          <div class="artifact-panel">
-            <div class="artifact-documents">
-              <a class="document-link document-link-pwc" href="./PwC_China_Tea_Market_Feasibility_Analysis.pdf" target="_blank" rel="noreferrer">
-                <span>普华永道战略咨询实习</span>
-                <strong>进入中国奶茶市场可行性分析</strong>
-                <em>PDF 原始报告 · 可在线查看</em>
+            <div class="contact-list" aria-label="联系方式">
+              <a href="mailto:shicaodeyouxiang@163.com">
+                <span>邮箱</span>
+                <strong>shicaodeyouxiang@163.com</strong>
               </a>
-              <a class="document-link document-link-xiaomi" href="./Xiaomi_Kunlun_Service_Package.pptx" target="_blank" rel="noreferrer">
-                <span>小米汽车售后部线上实习</span>
-                <strong>Xiaomi Kunlun 服务包方案</strong>
-                <em>PPTX 完整方案 · 可下载查看</em>
+              <a href="tel:+8618846839735">
+                <span>电话</span>
+                <strong>18846839735</strong>
               </a>
-              <a
-                class="document-link document-link-flow"
-                href="https://www.figma.com/board/SrQsMXkDBST5beGse5i8HO/%E5%B0%8F%E7%B1%B3%E6%B1%BD%E8%BD%A6%E6%B4%97%E8%BD%A6%E7%BE%8E%E5%AE%B9%E6%9C%8D%E5%8A%A1%E6%B5%81%E7%A8%8B%E6%B3%B3%E9%81%93%E5%9B%BE%EF%BC%88%E5%AE%8C%E6%95%B4%E4%B8%BB%E5%B9%B2%E7%89%88%EF%BC%89?node-id=0-1&amp;t=aeL413q9TjSkaQCs-0"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>小米汽车 · 服务流程设计</span>
-                <strong>洗车美容服务流程泳道图</strong>
-                <em>FigJam · 用户、系统、门店与取送车协同</em>
-              </a>
-              <a
-                class="document-link document-link-coordinate"
-                href="https://gcn3uxo46vmw.feishu.cn/wiki/K8uDwJRWUixmzJkOFDacYgA7nlb?from=from_copylink"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>小米 Kunlun · 用户价值研究</span>
-                <strong>用户感知坐标系</strong>
-                <em>40 项权益对比 · 使用频次与价格感知</em>
-              </a>
+              <button class="copy-contact" type="button" data-copy="shicaowx">
+                <span>微信</span>
+                <strong>shicaowx</strong>
+              </button>
             </div>
-            <details class="reference-drawer">
-              <summary>
-                <span>References</span>
-                <em>研究底稿与来源 · 6 项</em>
-              </summary>
-              <div class="artifact-links">
-                <a href="https://gcn3uxo46vmw.feishu.cn/wiki/Lte2wxxPDiDVSNkgsj5cRFTGncd?from=from_copylink" target="_blank" rel="noreferrer">
-                  <span>R1</span>
-                  <strong>昆仑 服务包研究</strong>
-                  <em>飞书文档</em>
-                </a>
-                <a href="https://gcn3uxo46vmw.feishu.cn/wiki/DV2IwHrzQiWSShk6AIecqDbInle?from=from_copylink" target="_blank" rel="noreferrer">
-                  <span>R2</span>
-                  <strong>Industry Research</strong>
-                  <em>行业研究</em>
-                </a>
-                <a href="https://gcn3uxo46vmw.feishu.cn/wiki/SrjDwRd3GilwtNkECHdcy3hGnrh?from=from_copylink" target="_blank" rel="noreferrer">
-                  <span>R3</span>
-                  <strong>Ownership Benefit Benchmark</strong>
-                  <em>车主权益对标</em>
-                </a>
-                <a href="https://gcn3uxo46vmw.feishu.cn/wiki/ITgnw518pi5QmAkRgpccbxGcnmh?from=from_copylink" target="_blank" rel="noreferrer">
-                  <span>R4</span>
-                  <strong>Ownership Benefit Benchmark Sheet</strong>
-                  <em>数据底表</em>
-                </a>
-                <a href="https://gcn3uxo46vmw.feishu.cn/wiki/BALPwtlpcigwXlkLNoMcSdLWnKx?from=from_copylink" target="_blank" rel="noreferrer">
-                  <span>R5</span>
-                  <strong>Reference List 2</strong>
-                  <em>官方服务来源</em>
-                </a>
-                <a href="https://gcn3uxo46vmw.feishu.cn/wiki/WeY9wkFMXioIdzkCyQIc19Isn9d?from=from_copylink" target="_blank" rel="noreferrer">
-                  <span>R6</span>
-                  <strong>Reference List</strong>
-                  <em>行业资料来源</em>
-                </a>
+
+            <details class="about-more">
+              <summary>阅读完整介绍</summary>
+              <div class="about-prose">
+                <p>嗨！我是 Zijian You</p>
+                <p>
+                  我是一名在英国 Warwick WMG 攻读 Programme and Project Management
+                  的研究生，也是一名对商业、项目管理、汽车行业和跨文化沟通都很感兴趣的人。
+                </p>
+                <p>
+                  我一直觉得，好的项目不只是把事情按时完成，更重要的是把不同的人、资源和想法连接起来。无论是在课堂上的可持续医疗合作项目，还是在实习中接触供应链、咨询和金融相关工作，我都越来越确定：我喜欢处理复杂问题，也喜欢把混乱的信息整理成清晰的方案。
+                </p>
+                <p>
+                  因此，我正在慢慢建立属于自己的方向：<br />
+                  我关注
+                  项目管理、商业分析、供应链、汽车行业、ESG
+                  与战略咨询。这些领域看起来很不同，但它们都有一个共同点——都需要理解真实的业务问题，并用结构化的方法找到可执行的解决方案。
+                </p>
+                <p>
+                  在过去的经历中，我曾接触过Xiaomi的供应链工作、KPMG
+                  的企业实习经历，中信证券实习经历以及金融行业相关分析工作。这些经历让我学会了如何在快节奏环境中处理信息、协调任务，也让我意识到，专业能力不仅仅是会使用工具，更是能够理解问题、推动沟通、持续交付结果。
+                </p>
+                <p>
+                  我不是一个只喜欢“写在纸上”的人。相比单纯讨论概念，我更喜欢把想法做成真实可见的东西：一份清晰的行业研究、一套完整的求职作品集、一个可以展示自己的个人网站，或者一个能帮助我长期积累职业竞争力的小系统。
+                </p>
+                <p>
+                  我现在也在探索如何用 AI
+                  和代码工具提升自己的学习、求职和内容表达效率。我希望这个网站不仅是一个介绍我的页面，也能成为我记录成长、展示项目、整理思考的地方。
+                </p>
+                <p>
+                  生活中的我喜欢游戏、汽车、旅行、视频内容和观察不同城市里的生活细节。有时候我会认真研究一个行业趋势，有时候也会沉迷于研究一套游戏技能搭配。对我来说，这些兴趣并不冲突，它们都让我保持好奇，也让我更愿意从不同角度理解世界。
+                </p>
+                <p>
+                  目前，我正在英国继续完成研究生学习，同时也在为未来进入商业、项目管理、汽车或咨询相关领域做准备。<br />
+                  这个网站会记录我的项目、经历、想法和一些正在成形的计划。它可能不会一开始就很完美，但会随着我的学习、实习和职业探索不断更新。
+                </p>
+                <p>欢迎来到这里，认识一个正在努力把想法变成现实的我。</p>
               </div>
             </details>
           </div>
-        </section>
-      </section>
-
-      <section id="finance" class="finance-section">
-        <div class="section-heading">
-          <p class="chapter">IV · Finance Experience</p>
-          <h2>证券研究和银行实习让我补上了金融业务的现场感。</h2>
-        </div>
-
-        <div class="finance-grid">
-          <article class="finance-card reveal">
-            <span>中信证券 · 投资分析实习生 · 杭州 · 2024.05-2024.07</span>
-            <h3>把行业信息整理成投资判断材料。</h3>
-            <ul>
-              <li>分析行业与上市公司数据，支持撰写日 / 周报和深度研究报告。</li>
-              <li>拆解上市公司三大财务报表，用 Excel 完成数据建模与可视化。</li>
-              <li>整理调研与电话会议纪要，提炼核心信息并形成结构化分析。</li>
-              <li>研究证券行业财税政策，理解税收对企业财务运作的影响。</li>
-            </ul>
-          </article>
-
-          <article class="finance-card reveal">
-            <span>光大银行 · 客户经理实习生 · 哈尔滨 · 2023.04-2023.07</span>
-            <h3>从客户沟通、产品匹配到流程合规。</h3>
-            <ul>
-              <li>分析客户资产结构和风险偏好，匹配理财、基金等产品。</li>
-              <li>累计服务客户 100 余人，推动客户资金转化，实现新增存款 20 万元。</li>
-              <li>参与贷前资料收集、风险初审和流程跟进，支持业务合规开展。</li>
-              <li>处理客户投诉并优化沟通流程，推动客户满意度提升 65%。</li>
-            </ul>
-          </article>
         </div>
       </section>
 
-      <section id="leadership" class="leadership-section">
-        <div class="section-heading">
-          <p class="chapter">V · Education & Leadership</p>
-          <h2>教育经历和校园组织工作。</h2>
-        </div>
-
-        <div class="education-timeline">
-          <article class="reveal">
-            <span>2025.09-2026.09</span>
-            <h3>华威大学 · MSc Programme and Project Management</h3>
-            <p>项目规划管理与控制、组织人员与绩效、项目财务管理、变革管理、多项目与项目群环境管理。</p>
-          </article>
-          <article class="reveal">
-            <span>2021.09-2025.06</span>
-            <h3>谢菲尔德大学 · BSc Accounting, Finance and Management</h3>
-            <p>管理会计、财务会计、公司分析与管理、应用会计与财务管理、会计与咨询案例研究；2021 年谢菲尔德大学奖学金。</p>
-          </article>
-          <article class="reveal">
-            <span>2021.09-2025.06</span>
-            <h3>谢菲尔德中国学联 · 外事部部长</h3>
-            <p>统筹公益与慈善活动，作为学生、校方和中国驻曼彻斯特总领馆之间的沟通桥梁，推动校友会创建与校友网络建设。</p>
-          </article>
-          <article class="reveal">
-            <span>2021.09-2025.06</span>
-            <h3>红十字会 · 内联部成员</h3>
-            <p>统筹部门活动计划，参与救护员资格考核流程设计与现场监考，策划艾滋病预防与反歧视主题活动。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="skills-section">
-        <div class="section-heading">
-          <p class="chapter">VI · Skills</p>
-          <h2>我常用的分析方法、工具和语言。</h2>
-        </div>
-
-        <div class="skill-board">
-          <div class="skill-column reveal">
-            <h3>商业与战略</h3>
-            <ul>
-              <li>市场进入可行性分析</li>
-              <li>竞品对标与进入模式设计</li>
-              <li>消费者趋势与城市分层研究</li>
-              <li>波特五力与商业壁垒判断</li>
-            </ul>
+      <section class="section section-muted" id="internships" aria-labelledby="internships-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2 id="internships-title">实习经历</h2>
           </div>
-          <div class="skill-column reveal">
-            <h3>财务与数据</h3>
-            <ul>
-              <li>三大财务报表分析</li>
-              <li>单店盈利模型与回本周期测算</li>
-              <li>Excel 数据透视表、VLOOKUP、宏</li>
-              <li>数据建模与可视化表达</li>
-            </ul>
-          </div>
-          <div class="skill-column reveal">
-            <h3>金融与客户</h3>
-            <ul>
-              <li>投资研究材料整理</li>
-              <li>客户资产结构与风险偏好分析</li>
-              <li>贷前资料收集与风险初审</li>
-              <li>客户投诉沟通与流程优化</li>
-            </ul>
-          </div>
-          <div class="skill-column reveal">
-            <h3>工具与语言</h3>
-            <ul>
-              <li>中文母语，英语可作为工作语言</li>
-              <li>Kingdee、Yonyou、SAP</li>
-              <li>Word、PowerPoint、Excel</li>
-              <li>结构化汇报与中英文材料转换</li>
-            </ul>
+
+          <div class="experience-list">
+            <details class="experience-item">
+              <summary>
+                <span class="experience-company">小米汽车</span>
+                <span class="experience-role">
+                  <strong>售后服务与用户研究</strong>
+                  <small>线上实习 · Kunlun 车主服务包</small>
+                </span>
+                <time>项目制线上实习</time>
+              </summary>
+              <div class="experience-detail">
+                <p>
+                  围绕高端家庭越野旅行场景，整理竞品服务、用户需求和售后触点，形成 Kunlun
+                  车主服务包方案。
+                </p>
+                <ul>
+                  <li>对比 Land Rover、Ford F-150 Raptor、Lincoln Navigator 的车主权益与服务逻辑。</li>
+                  <li>梳理救援、事故处理、长途检查、取送车与服务进度追踪等关键触点。</li>
+                  <li>整理用户感知坐标系、服务流程泳道图与车主服务包研究材料。</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="experience-item">
+              <summary>
+                <span class="experience-company">普华永道</span>
+                <span class="experience-role">
+                  <strong>战略管理咨询实习生</strong>
+                  <small>英国 · 考文垂</small>
+                </span>
+                <time>2026.01-2026.04</time>
+              </summary>
+              <div class="experience-detail">
+                <p>
+                  主导中国新式茶饮市场进入可行性分析，完成从宏观市场到单店盈利模型的研究框架与完整报告。
+                </p>
+                <ul>
+                  <li>构建“产品—消费场景—竞争品牌”三层分析模型。</li>
+                  <li>评估自建、联营、加盟与并购四种进入模式。</li>
+                  <li>搭建单店盈利模型，测算资本支出、成本结构与投资回收周期。</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="experience-item">
+              <summary>
+                <span class="experience-company">中信证券</span>
+                <span class="experience-role">
+                  <strong>投资分析实习生</strong>
+                  <small>中国 · 杭州</small>
+                </span>
+                <time>2024.05-2024.07</time>
+              </summary>
+              <div class="experience-detail">
+                <ul>
+                  <li>分析行业及上市公司数据，支持撰写日 / 周报与深度研究报告。</li>
+                  <li>拆解上市公司三大财务报表，使用 Excel 完成数据建模与可视化。</li>
+                  <li>整理调研及电话会议纪要，提炼核心信息并形成结构化分析。</li>
+                  <li>研究证券行业财税政策，理解税收对企业财务运作的影响。</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="experience-item">
+              <summary>
+                <span class="experience-company">光大银行</span>
+                <span class="experience-role">
+                  <strong>客户经理实习生</strong>
+                  <small>中国 · 哈尔滨</small>
+                </span>
+                <time>2023.04-2023.07</time>
+              </summary>
+              <div class="experience-detail">
+                <ul>
+                  <li>分析客户资产结构和风险偏好，匹配理财、基金等产品。</li>
+                  <li>累计服务客户 100 余人，推动客户资金转化，实现新增存款 20 万元。</li>
+                  <li>参与贷前材料收集、风险初审、流程跟进与营销活动执行。</li>
+                  <li>处理客户投诉并优化沟通流程，推动客户满意度提升 65%。</li>
+                </ul>
+              </div>
+            </details>
           </div>
         </div>
       </section>
 
-      <section id="resume" class="resume-section">
-        <div class="resume-copy">
-          <p class="chapter">VII · Resume & Contact</p>
-          <h2>简历和联系方式。</h2>
-          <p>
-            手机：18846839735；邮箱：shicaodeyouxiang@163.com；微信：shicaowx。
-          </p>
-          <div class="hero-actions">
-            <a class="primary-action" href="./You_Zijian_CV_CN.pdf">下载中文 PDF</a>
-            <a class="secondary-action" href="./You_Zijian_CV_EN.pdf">下载 English PDF</a>
-            <a class="secondary-action" href="./Zijian_You_Resume_CN.docx">中文 Word</a>
+      <section class="section" id="intern-projects" aria-labelledby="intern-projects-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Internship Projects</p>
+            <h2 id="intern-projects-title">实习项目</h2>
+            <p>这里放实习期间完成的报告、方案和研究底稿。</p>
+          </div>
+
+          <div class="project-list">
+            <details class="project-item">
+              <summary>
+                <img
+                  src="./assets/generated/work-index/pwc-report-01.png"
+                  alt="普华永道中国新式茶饮市场进入报告封面"
+                />
+                <span class="project-summary">
+                  <span class="project-meta">普华永道 · 战略管理咨询</span>
+                  <strong>中国新式茶饮市场进入可行性分析</strong>
+                  <small>市场规模、竞争格局、进入模式与单店财务测算</small>
+                </span>
+              </summary>
+              <div class="project-detail">
+                <div>
+                  <h3>研究内容</h3>
+                  <p>
+                    从宏观人口、人均可支配收入和餐饮消费出发，进一步分析城市层级、消费者趋势、竞争品牌与单店模型。
+                  </p>
+                </div>
+                <div>
+                  <h3>商业分析</h3>
+                  <p>
+                    使用波特五力识别供应链深度与数字化运营两类壁垒，并对比自建、联营、加盟和并购四种进入方式。
+                  </p>
+                </div>
+                <div>
+                  <h3>财务判断</h3>
+                  <p>
+                    测算资本支出 30-50 万元、原料 35-40%、租金与人力各 15-20%，推演 12-18
+                    个月投资回收周期。
+                  </p>
+                </div>
+                <a
+                  class="text-link"
+                  href="./PwC_China_Tea_Market_Feasibility_Analysis.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  查看完整 PDF 报告
+                </a>
+              </div>
+            </details>
+
+            <details class="project-item">
+              <summary>
+                <img
+                  src="./assets/generated/work-index/xiaomi-kunlun-deck.png"
+                  alt="Xiaomi Kunlun 车主服务包方案封面"
+                />
+                <span class="project-summary">
+                  <span class="project-meta">小米汽车 · 售后服务与用户研究</span>
+                  <strong>Kunlun 车主服务包方案</strong>
+                  <small>用户场景、服务标杆、权益结构与服务流程</small>
+                </span>
+              </summary>
+              <div class="project-detail">
+                <div>
+                  <h3>用户场景</h3>
+                  <p>
+                    关注周末、假期、露营和长途旅行，梳理实时状态、人工安抚、专业接送、数字交车与减少交接等需求。
+                  </p>
+                </div>
+                <div>
+                  <h3>服务架构</h3>
+                  <p>
+                    将方案分为 Essential Care、Travel Assurance、Premium Concierge
+                    三层，覆盖基础保养、旅行保障与高触达管家服务。
+                  </p>
+                </div>
+
+                <div class="artifact-links" aria-label="小米项目主要材料">
+                  <a href="./Xiaomi_Kunlun_Service_Package.pptx" target="_blank" rel="noreferrer">
+                    <strong>Xiaomi Kunlun 服务包方案</strong>
+                    <span>PPTX 完整方案</span>
+                  </a>
+                  <a
+                    href="https://www.figma.com/board/SrQsMXkDBST5beGse5i8HO/%E5%B0%8F%E7%B1%B3%E6%B1%BD%E8%BD%A6%E6%B4%97%E8%BD%A6%E7%BE%8E%E5%AE%B9%E6%9C%8D%E5%8A%A1%E6%B5%81%E7%A8%8B%E6%B3%B3%E9%81%93%E5%9B%BE%EF%BC%88%E5%AE%8C%E6%95%B4%E4%B8%BB%E5%B9%B2%E7%89%88%EF%BC%89?node-id=0-1&t=aeL413q9TjSkaQCs-0"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <strong>洗车美容服务流程泳道图</strong>
+                    <span>FigJam 流程设计</span>
+                  </a>
+                  <a
+                    href="https://gcn3uxo46vmw.feishu.cn/wiki/K8uDwJRWUixmzJkOFDacYgA7nlb?from=from_copylink"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <strong>用户感知坐标系</strong>
+                    <span>40 项权益对比</span>
+                  </a>
+                </div>
+
+                <details class="reference-drawer">
+                  <summary>References · 研究底稿与来源</summary>
+                  <div class="reference-links">
+                    <a
+                      href="https://gcn3uxo46vmw.feishu.cn/wiki/Lte2wxxPDiDVSNkgsj5cRFTGncd?from=from_copylink"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Kunlun 服务包研究
+                    </a>
+                    <a
+                      href="https://gcn3uxo46vmw.feishu.cn/wiki/DV2IwHrzQiWSShk6AIecqDbInle?from=from_copylink"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Industry Research
+                    </a>
+                    <a
+                      href="https://gcn3uxo46vmw.feishu.cn/wiki/SrjDwRd3GilwtNkECHdcy3hGnrh?from=from_copylink"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Ownership Benefit Benchmark
+                    </a>
+                    <a
+                      href="https://gcn3uxo46vmw.feishu.cn/wiki/ITgnw518pi5QmAkRgpccbxGcnmh?from=from_copylink"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Ownership Benefit Benchmark Sheet
+                    </a>
+                    <a
+                      href="https://gcn3uxo46vmw.feishu.cn/wiki/BALPwtlpcigwXlkLNoMcSdLWnKx?from=from_copylink"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Reference List 2
+                    </a>
+                    <a
+                      href="https://gcn3uxo46vmw.feishu.cn/wiki/WeY9wkFMXioIdzkCyQIc19Isn9d?from=from_copylink"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Reference List
+                    </a>
+                  </div>
+                </details>
+              </div>
+            </details>
           </div>
         </div>
-        <div class="qr-block">
-          <img src="./qr-github-pages.png" alt="个人主页二维码" />
-          <span>扫码打开个人主页</span>
+      </section>
+
+      <section class="section section-campus" id="campus-projects" aria-labelledby="campus-projects-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">University Projects</p>
+            <h2 id="campus-projects-title">在校项目</h2>
+            <p>课程项目与自主作品单独整理，不与实习材料混在一起。</p>
+          </div>
+
+          <div class="campus-grid">
+            <article class="campus-card">
+              <img src="./assets/battersea-slide1.png" alt="Battersea Power Station 项目利益相关者协作分析" />
+              <div>
+                <span>Warwick WMG · Collaboration Challenge</span>
+                <h3>Battersea Power Station 利益相关者协作分析</h3>
+                <p>
+                  以 Battersea Power Station
+                  更新项目为案例，分析商业回报、公共价值、遗产保护与可持续目标之间的协调问题。
+                </p>
+              </div>
+            </article>
+
+            <article class="campus-card">
+              <img src="./assets/loopit-slide1.png" alt="Loopit AI-Native 持续数字世界平台项目封面" />
+              <div>
+                <span>自主项目 · AI-Native Platform</span>
+                <h3>Loopit 持续数字世界平台</h3>
+                <p>
+                  从内容消费到数字存在，围绕产品、商业、风险与平台视角，整理 AI-native
+                  时代的新入口判断。
+                </p>
+              </div>
+            </article>
+
+            <article class="campus-card campus-card-text">
+              <div>
+                <span>Warwick WMG · Team Project</span>
+                <h3>可持续医疗合作项目</h3>
+                <p>
+                  课堂团队围绕可持续医疗合作展开研究。我负责整合不同成员、资源和想法，并把复杂信息整理成清晰的方案。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Education &amp; Leadership</p>
+            <h2 id="education-title">教育与校园经历</h2>
+          </div>
+
+          <div class="education-grid">
+            <article>
+              <time>2025.09-2026.09</time>
+              <h3>华威大学</h3>
+              <p>MSc Programme and Project Management</p>
+              <small>
+                项目规划管理与控制、组织人员与绩效、项目财务管理、变革管理、多项目与项目群环境管理。
+              </small>
+            </article>
+            <article>
+              <time>2021.09-2025.06</time>
+              <h3>谢菲尔德大学</h3>
+              <p>BSc Accounting, Finance and Management</p>
+              <small>
+                管理会计、财务会计、公司分析与管理、应用会计与财务管理、会计与咨询案例研究；2021
+                年谢菲尔德大学奖学金。
+              </small>
+            </article>
+          </div>
+
+          <div class="leadership-list">
+            <article>
+              <span>谢菲尔德中国学联</span>
+              <h3>外事部部长</h3>
+              <p>
+                统筹公益与慈善活动，承担学生、校方与中国驻曼彻斯特总领馆之间的沟通，并推动校友会创建与校友网络建设。
+              </p>
+            </article>
+            <article>
+              <span>红十字会</span>
+              <h3>内联部成员</h3>
+              <p>
+                统筹部门活动计划，参与救护员资格考核流程与现场监考，策划艾滋病预防与反歧视主题活动。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted skills-section" aria-labelledby="skills-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">Skills</p>
+            <h2 id="skills-title">方法、工具与语言</h2>
+          </div>
+          <div class="skills-grid">
+            <div>
+              <h3>商业与项目</h3>
+              <p>市场进入分析、竞品研究、项目规划与控制、利益相关者协调、服务流程设计。</p>
+            </div>
+            <div>
+              <h3>财务与数据</h3>
+              <p>财务报表分析、Excel 建模与可视化、数据透视表、VLOOKUP、宏。</p>
+            </div>
+            <div>
+              <h3>软件与语言</h3>
+              <p>Word、PowerPoint、金蝶、用友、SAP；中文母语，英语可作为工作语言。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section resume-section" id="resume" aria-labelledby="resume-title">
+        <div class="section-shell resume-grid">
+          <div>
+            <p class="eyebrow">CV &amp; Contact</p>
+            <h2 id="resume-title">简历与联系</h2>
+            <p>
+              这里保留中文和英文 PDF 简历，也提供中文 Word 版本。网站中的项目材料可以直接打开查看。
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="./You_Zijian_CV_CN.pdf">中文 PDF</a>
+              <a class="button button-secondary" href="./You_Zijian_CV_EN.pdf">English PDF</a>
+              <a class="button button-secondary" href="./Zijian_You_Resume_CN.docx">中文 Word</a>
+            </div>
+            <address>
+              <a href="mailto:shicaodeyouxiang@163.com">shicaodeyouxiang@163.com</a>
+              <a href="tel:+8618846839735">18846839735</a>
+              <span>微信：shicaowx</span>
+            </address>
+          </div>
+          <figure class="qr-card">
+            <img src="./qr-github-pages.png" alt="个人主页二维码" />
+            <figcaption>扫码打开个人主页</figcaption>
+          </figure>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <span>由梓健 · Zijian You</span>
-      <span>Consulting · Finance · Automotive Service Strategy · Project Management</span>
+    <footer>
+      <div class="section-shell">
+        <strong>由梓健 Zijian You</strong>
+        <span>Programme &amp; Project Management</span>
+      </div>
     </footer>
 
-    <script src="./app.js"></script>
+    <div class="copy-status" role="status" aria-live="polite"></div>
   </body>
 </html>
