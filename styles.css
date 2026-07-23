@@ -63,6 +63,14 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 :focus-visible {
   outline: 3px solid rgba(37, 99, 235, 0.35);
   outline-offset: 3px;
@@ -299,11 +307,62 @@ a {
 
 .about-more > summary,
 .reference-drawer > summary {
+  display: flex;
   min-height: 44px;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px 0;
   color: var(--blue);
   cursor: pointer;
   font-weight: 700;
+  gap: 16px;
+}
+
+.disclosure-hint {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 650;
+  gap: 5px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.disclosure-hint img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.72;
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
+}
+
+.disclosure-close {
+  display: none;
+}
+
+details[open] > summary > .disclosure-hint .disclosure-open {
+  display: none;
+}
+
+details[open] > summary > .disclosure-hint .disclosure-close {
+  display: inline;
+}
+
+details[open] > summary > .disclosure-hint img {
+  transform: rotate(180deg);
+}
+
+details > summary:hover > .disclosure-hint,
+details > summary:focus-visible > .disclosure-hint {
+  color: var(--blue);
+}
+
+details > summary:hover > .disclosure-hint img,
+details > summary:focus-visible > .disclosure-hint img {
+  opacity: 1;
 }
 
 .about-prose {
@@ -375,15 +434,15 @@ a {
 
 .experience-item > summary,
 .project-item > summary {
+  position: relative;
   cursor: pointer;
-  list-style-position: outside;
 }
 
 .experience-item > summary {
   display: grid;
   min-height: 78px;
   align-items: center;
-  padding: 12px;
+  padding: 12px 92px 12px 12px;
   gap: 24px;
   grid-template-columns: 180px minmax(0, 1fr) 160px;
 }
@@ -419,6 +478,14 @@ a {
   text-align: right;
 }
 
+.experience-item > summary > .disclosure-hint,
+.project-item > summary > .disclosure-hint {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
 .experience-detail {
   padding: 0 180px 26px 216px;
   color: #4b5563;
@@ -441,7 +508,7 @@ a {
   display: grid;
   min-height: 128px;
   align-items: center;
-  padding: 18px 12px;
+  padding: 18px 92px 18px 12px;
   gap: 24px;
   grid-template-columns: 200px minmax(0, 1fr);
 }
@@ -450,7 +517,7 @@ a {
   background: var(--soft);
 }
 
-.project-item > summary img {
+.project-item > summary > img {
   width: 200px;
   height: 94px;
   border: 1px solid var(--line);
@@ -460,8 +527,8 @@ a {
   transition: filter 180ms ease;
 }
 
-.project-item[open] > summary img,
-.project-item > summary:hover img {
+.project-item[open] > summary > img,
+.project-item > summary:hover > img {
   filter: grayscale(0);
 }
 
@@ -941,9 +1008,19 @@ footer span {
   .experience-item > summary {
     display: grid;
     min-height: 0;
-    padding: 20px 8px;
+    padding: 20px 46px 20px 8px;
     gap: 7px;
     grid-template-columns: 1fr;
+  }
+
+  .experience-item > summary > .disclosure-hint,
+  .project-item > summary > .disclosure-hint {
+    right: 8px;
+  }
+
+  .experience-item > summary > .disclosure-hint > span,
+  .project-item > summary > .disclosure-hint > span {
+    display: none;
   }
 
   .experience-company {
@@ -964,12 +1041,12 @@ footer span {
 
   .project-item > summary {
     min-height: 0;
-    padding: 18px 8px;
+    padding: 18px 46px 18px 8px;
     gap: 16px;
     grid-template-columns: 104px minmax(0, 1fr);
   }
 
-  .project-item > summary img {
+  .project-item > summary > img {
     width: 104px;
     height: 78px;
   }
