@@ -649,13 +649,7 @@ details > summary:focus-visible > .disclosure-hint img {
 .campus-card img {
   width: 100%;
   aspect-ratio: 16 / 8.8;
-  filter: grayscale(1);
   object-fit: cover;
-  transition: filter 180ms ease;
-}
-
-.campus-card:hover img {
-  filter: grayscale(0);
 }
 
 .campus-card > div {
